@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indic Aidias</title>
+    <style>
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Variables */
+        :root {
+            /* --primary-color: #8a2be2; */
+            --text-color: #ffffff;
+            --bg-color: #000000;
+            --accent-color: #b19cd9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .logo-symbol {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: rotate 10s linear infinite;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 4rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        h1, h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Get Involved Section */
+        .get-involved {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://sjc.microlink.io/hKsp17pcTOo8GciufgrE3A5BCXVZjgTfGc0ZZMregDitGE4svUajJDP7tZyvl5b633wqSrFggHfMkx4wxUAp1w.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+
+        .get-involved h2 {
+            color: var(--text-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .logo-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">Indic Aidias</div>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html#about">About</a>
+            <a href="projects.html#projects">Projects</a>
+            <a href="events.html#events">Events</a>
+            <a href="services.html#services">Services</a>
+            <a href="donate.html#donate">Donate</a>
+            <a href="wiki.html#wiki">Wiki</a>
+        </nav>
+    </header>
+
+    <main>
+       
+    </div>
+
+    <div id="content">
+    
+    
+    <br>
+    
+    <p>Indic AIDias is an independent, 501(c)3 non-profit organization with a mission to make machine learning (ML) research opportunities, including collaboration and mentorship opportunities <b>accessible</b> and <b>free</b> for all.</p>
+    
+    
+    <p>
+    Indic AIDias is a community for the genuinely curious people who are interested in getting better at doing machine learning research, for whatever reason. To that end, the community building aspect of Indic is creating a place to 1) develop and train relevant skills for maturing into a researcher, 2) find kindred spirits, friends and collaborators along the way, 3) produce serious research, and 4) give back to society.
+    </p>
+    
+    <p>Indic can be a "research home" for you regardless of your affiliation, employer, or background. </p>
+    <!-- 
+    Through the three branches we want to further democrartize ML/AI research by providing mentorship and peer support to those underrepresented, and on non-traditional paths of research.
+    We rely on established researchers who care about the societal impact of science, the wellbeing and fairness of the community, and are willing to give back, broaden and diversify their collaboration circle.
+    -->
+    
+    
+    
+    
+    <h2>Get Involved</h2>
+    <p style="color:Gray"><i>Indic is run entirely by volunteers. Find out how you can be part of the helping crew.</i></p>
+    
+    <div id="getinvolved">
+    <ol>
+        <li>Completely new here and just want to learn more? Read the <a href="/wiki/">Welcome to Indic Aidias</a> section on our Wiki to understand the structure of this space.<p></p>
+        </li><li>If you have a paper, or a topic you feel excited about, give a talk at <a href="/dlct/">DLCT</a>.</li>
+        <li>If you want to contribute an idea to help junior researchers get started, write up a one-page <a href="/rfp/">RFP</a> and present it at our next <a href="/events//#jam">research jam</a>.</li>
+        <li>If you are a junior researcher working on your project in a vacuum, make a short presentation and present it at our next <a href="/events//#jam">research jam</a>.</li>
+        <li>If you want to give back some of your time to connect with researchers, especially those at a disadvantage in ML community, host an <a href="/services//#mloh">Office Hour</a> with us!
+        </li><li>If you need access to GPUs for running ML experiments, check out our <a href="https://mlcollective.org/wiki/ask-mlc-compute-assistance/">free compute resources</a>.
+        </li><li>If you are excited about the everyday actions of community building, our <a href="https://discord.com/invite/nNJ4GBPZm9">Open Collab discord</a> is always looking for responsible administrators and moderators.</li>
+        <li>If you are excited about events (e.g. organizing, giving talks, or simply attending), we <a href="/events/">get together all the time</a>, both in-person and virtual! From pure social hangouts to study groups and research meetings, you'll meet great people and inspire or get inspired. And if you miss one, there's always another on the <a href="https://calendar.google.com/calendar/u/0/embed?src=e4p5s7715ersqsoet6cq4509q0@group.calendar.google.com">events calendar</a>.</li>
+        <li>If you want to support our mission in general, consider <a href="/donate/">making a donation</a>.
+    </li></ol>
+    
+    </div> <!-- getinvolved -->
+    
+    <h2>Stay in Touch</h2>
+    <p style="color:Gray"><i>We have many outlets, not to overwhelm you, but to suit different comfort levels of socialization.</i></p>
+    
+    <div id="stayintouch">
+    <ol>
+        <li>Follow our <a href="https://github.com/Indic-aiDias">GitHub</a> for major updates.</li>
+        <li><a href="https://groups.google.com/g/deep-learning-classics-trends">Subscribe</a> to our weekly reading group "Deep Learning: Classics and Trends."</li>
+        <li>Join our <a href="https://discord.gg/nNJ4GBPZm9">Open Collab Discord</a> server.</li>
+        <li>Check out our events calendar (<a href="https://calendar.google.com/calendar/u/0/embed?src=e4p5s7715ersqsoet6cq4509q0@group.calendar.google.com">view</a>, <a href="https://calendar.google.com/calendar/u/0?cid=ZTRwNXM3NzE1ZXJzcXNvZXQ2Y3E0NTA5cTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">add to Google Calendar</a>, <a href="https://calendar.google.com/calendar/ical/e4p5s7715ersqsoet6cq4509q0%40group.calendar.google.com/public/basic.ics">iCal</a>) to join an upcoming event.</li>
+        <li>Watch our <a href="https://www.youtube.com/channel/UCp3a0vIbwtVGtMVIfIsKvCQ">YouTube</a> channel for research contents like <a href="https://youtube.com/playlist?list=PLfeYlJzwvDN2rBulI6eiOifGH70PjRs6V">research jam</a> recordings.
+        </li><li>Send us an email at <code>hello at mlcollective dot org</code>. </li>
+    </ol>
+    
+    </div> <!-- getintouch -->
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    </main>
+</body>
+</html>

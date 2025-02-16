@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indic Aidias</title>
+    <style>
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Variables */
+        :root {
+            /* --primary-color: #8a2be2; */
+            --text-color: #ffffff;
+            --bg-color: #000000;
+            --accent-color: #b19cd9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .logo-symbol {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: rotate 10s linear infinite;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 4rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        h1, h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Get Involved Section */
+        .our-story {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://sjc.microlink.io/hKsp17pcTOo8GciufgrE3A5BCXVZjgTfGc0ZZMregDitGE4svUajJDP7tZyvl5b633wqSrFggHfMkx4wxUAp1w.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+
+        .our-story h2 {
+            color: var(--text-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .logo-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">Indic Aidias</div>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html#about">About</a>
+            <a href="projects.html#projects">Projects</a>
+            <a href="events.html#events">Events</a>
+            <a href="services.html#services">Services</a>
+            <a href="donate.html#donate">Donate</a>
+            <a href="wiki.html#wiki">Wiki</a>
+        </nav>
+    </header>
+
+    <main>
+      
+    </div>
+
+    <div id="content">
+
+
+
+        <h2 id="mloh">Machine Learning Office Hours</h2>
+        
+        <p>You can make use of Indic Office Hours to meet 1:1 with experienced researchers to chat about anything related to your research, career, or anything else!  The Indic members listed below have been kind enough to volunteer their time to host these office hours. If you'd like to meet with anyone listed, you can book their time using the links provided. Office hours are virtual meetings unless unless otherwise specified.
+        
+        
+        
+        </p><p>Important note: when you book a meeting, the volunteer is committing to setting aside the required time to meet with you, giving up other parts of their day to do so. After booking, you will receive an email with links that can be used to cancel or reschedule the meeting if you realize you cannot make the time you booked. Please keep this email and use the links as needed.</p>
+        
+        <p><b>It is your responsibility to set any reminders or alarms to make sure you show up to the meeting on time or, if needed, cancel or reschedule with enough notice.</b></p>
+        
+        <p>If you have attended any Office Hours, kindly <a target="_blank" href="https://forms.gle/RB2WH5yvfNpUpDWn6">leave your feedback</a> on how it went so we can continue to improve the process!</p>
+        
+        <br>
+        
+        <table class="tg">
+        <thead>
+        <tr>
+        <th class="s"><h4>Office Hour Host</h4></th>
+        <th class="s"><h4>Preferred Topics</h4></th>
+        <th><h4>Booking link</h4></th>
+        </tr>
+        </thead>
+        
+        
+        <tbody>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/ravid_crop.jpg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Ravid Shwartz Ziv</p>
+              <p class="info">
+            <a href="https://www.ravid-shwartz-ziv.com/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?user=SqsLFwMAAAAJ&amp;hl=en&amp;oi=ao"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://x.com/ziv_ravid"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>Research, Career, Information theory, LLMs, etc</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendar.app.google/Lkm95fi1G7jKavG4A">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/photo_2024-02-16_00.19.00_crop.jpeg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Rahim Entezari</p>
+              <p class="info">
+            <a href="https://rahimentezari.github.io"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=CmTeX7kAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/rahiment"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>Research, Career, etc</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendar.app.google/3xVYACxeHSsq4kEb7">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/avatar_crop.jpg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Ayush Jain</p>
+              <p class="info">
+            <a href="https://ayushjain1144.github.io/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?user=cV-Nm_0AAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/ayushjain1144"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/ayushjain1144"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>research, graduate school, career/school decision</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendly.com/ayushjain1144/30min">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/jbhuang_crop.jpeg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Jia-Bin Huang</p>
+              <p class="info">
+            <a href="https://jbhuang0604.github.io/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?user=pp848fYAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/jbhuang0604"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>Research, graduate school, career.</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://jbhuang0604.github.io/#open-office-hour">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/Priyank-profile-2_crop.jpg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Priyank Jaini</p>
+              <p class="info">
+            <a href="https://priyankjaini.github.io/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.ca/citations?user=keg9BGEAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/priyankjaini"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>Career directions, Industry job market, grad school, probabilistic modeling</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendly.com/pjaini/15min">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/psc_gradient_crop.png" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Pablo Samuel Castro</p>
+              <p class="info">
+            <a href="https://psc-g.github.io/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?user=jn5r6TsAAAAJ&amp;hl=en"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/pcastr"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>RL, research, music, career, etc.</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendar.app.google/SRAa924Z2ac2D31x9">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/61802f08da76400ceead5c52_headshot-p-500_crop.jpeg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Nathan Lambert</p>
+              <p class="info">
+            <a href="https://www.natolambert.com/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?user=O4jW7BsAAAAJ&amp;hl"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/natolambert"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>graduate school, research directions, anything</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendly.com/natolambert/mlc">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        <tr>
+        <td style="vertical-align: top;">
+        
+          <div class="ohhost">
+            <div class="image"><img src="https://mlcollective.org/media/Andrea_crop_M3hqHoG.jpeg" alt="Member photo"></div>
+            <div class="text">
+              <p class="name">Andrea Madotto</p>
+              <p class="info">
+            <a href="https://andreamad8.github.io/"><i class="fas fa-home"></i></a>
+            <a href="https://scholar.google.com/citations?user=JBnyLicAAAAJ"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://twitter.com/AndreaMadotto"><i class="fab fa-twitter"></i></a>
+            
+              </p>
+            </div>
+          </div>
+        </td>
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+              <p><i>NLP, conversational models, research ideas</i></p>
+          </div>
+        </td>
+        
+        
+        <td style="vertical-align: top;">
+          <div class="ohhost">
+        
+              <p><a target="_blank" href="https://calendly.com/andreamad8/mlc-office-hours">Book a time</a></p>
+          </div>
+        </td>
+        
+        </tr>
+        
+        
+        
+        
+        </tbody>
+        </table> <!-- OH hosts table-->
+        
+        
+        
+        <h2 id="app"> Grad School Application Help Sessions</h2>
+        <p> We offer assistance to graduate school applicants year round. Often those events are announced during the application season on our Twitter account, Discord and News page. Our Discord channel <code>#how-to-grad-school</code> is dedicated to ongoing discussions around applying to and thriving in grad schools. Example of such services include:
+        </p>
+        
+        <ol>
+        <li> <a target="_blank" href="https://twitter.com/ml_collective/status/1465849265985662983?s=20">Grad school application help session</a> on December 4, 2021. </li>
+        <li> <a target="_blank" href="https://twitter.com/savvyRL/status/1278005360104620032?s=20">Grad school Retrospective</a> on July 7, 2020. </li>
+        </ol>
+        
+        
+        
+        </div>
+        
+        
+    
+    
+    
+    
+    </div>
+    
+    
+    </main>
+</body>
+</html>

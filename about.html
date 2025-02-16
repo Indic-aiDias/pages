@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indic Aidias</title>
+    <style>
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Variables */
+        :root {
+            /* --primary-color: #8a2be2; */
+            --text-color: #ffffff;
+            --bg-color: #000000;
+            --accent-color: #b19cd9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .logo-symbol {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: rotate 10s linear infinite;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 4rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        h1, h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Get Involved Section */
+        .our-story {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://sjc.microlink.io/hKsp17pcTOo8GciufgrE3A5BCXVZjgTfGc0ZZMregDitGE4svUajJDP7tZyvl5b633wqSrFggHfMkx4wxUAp1w.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+
+        .our-story h2 {
+            color: var(--text-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .logo-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">Indic Aidias</div>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html#about">About</a>
+            <a href="projects.html#projects">Projects</a>
+            <a href="events.html#events">Events</a>
+            <a href="services.html#services">Services</a>
+            <a href="donate.html#donate">Donate</a>
+            <a href="wiki.html#wiki">Wiki</a>
+        </nav>
+    </header>
+
+    <main>
+      
+    </div>
+
+    <div id="content">
+    
+    
+    <br>
+    
+
+
+<h2>Our Story</h2>
+<p>
+ML Collective was born from Deep Collective, a research group founded by Jason Yosinski and Rosanne Liu at Uber AI Labs in 2017. We started that group to foster open research collaboration and free sharing of ideas, and in 2020 we moved the group outside Uber and renamed it to Indic.
+Over the years we have aimed to build a culture of open, cross-institutional research collaboration among researchers of diverse and non-traditional backgrounds. Our weekly paper reading group, <a href="/dlct/">Deep Learning: Classics and Trends</a>, has been running since 2018 and is open to the whole community.
+
+</p>
+
+<p>
+Of course we love all of our papers, but a few favorites include <a href="https://eng.uber.com/intrinsic-dimension/">Measuring Intrinsic Dimension</a>, <a href="https://eng.uber.com/coordconv/">CoordConv</a>, and <a href="https://iclr.cc/virtual_2020/poster_H1edEyBKDS.html">Plug and Play Language Models</a>.
+</p>
+
+
+
+<h2 id="mission">Our Mission</h2>
+
+
+<p>
+Our mission is to facilitate open collaboration and free mentorship by providing a home for anyone with AI/ML research passion, ideas, and expertise, who is interested in advancing both their professional careers and AI/ML research at large. We produce open-access research (similarly to an academic or industry lab), 
+but instead of publishing for the sake of publishing, we see it as a means to an end: to <b>nurture the growth of researchers</b> to ensure a better world with better science.
+</p>
+
+<p>
+We do not employ researchers. 
+Common workplaces for researchers tend to standardize their employees’ growth path, so much so that there exists a numbered level system, or a set of permitted titles that researchers climb up through. Instead we think research should be more like art, and researchers should freely look for opportunities to polish their profile like actors going to auditions. 
+</p>
+
+<p>
+We aim at radically democratizing and diversifying ML research. Recent efforts in democratizing AI/ML, including MOOCs, open-source software, and open-access publications, have greatly lowered the bar to individual knowledge acquisition. The growth into a skillful individual researcher is now approachable from various backgrounds. However, <b>the bar to high quality collaborative research is still high</b> and at times inaccessible to individuals of qualified abilities who come from underrepresented backgrounds or disciplines. ML Collective supports unaffiliated researchers, and at the same time encourages affiliated researchers to broaden and diversify their collaborations and influence.
+</p>
+
+<p>
+We believe the ultimate revenue is personal freedom and collective happiness. So we stay a non-profit to help redistribute resources for the better.
+</p>
+
+<h2>FAQ</h2>
+
+<p class="faq_q">Q: What does the name “ML Collective” mean?</p>
+<p class="faq_a">A: “ML” is short for machine learning, our overall research direction. Our “Collective” is a group of genuinely curious people who simply enjoy working together.</p>
+
+
+<p class="faq_q">Q: What do you do?</p>
+<p class="faq_a">A: A few things! First, we are building a community of people for whom conducting ML research is their passion, but not necessarily their job, and we aim to give them a supportive, inspiring, but also not necessarily frictionless environment. We put people seeking answers for "how do I get into ML research" and "how do I give back to the ML community" together, and let magic happen. Our community members have self-organized study groups and interest groups — visit our <a href="https://discord.gg/nNJ4GBPZm9" target="_blank">Discord server</a> for more information.
+
+</p><p class="faq_a">We are also a lab that produces serious science and shows it to the world. This includes peer-reviewed papers, articles, blog posts, educational videos, technical demonstrations, software packages, and other products that showcase a unique finding or help further our understanding of machine learning. In other words, we're a research group, like those in academia or in corporations with a research division, but not!</p>
+
+<p class="faq_a">We have a famous <a href="/dlct/">open talk series</a> and recurring <a href="/events/#jam">research meetings</a> that help promote accessibility in machine learning research.</p>
+
+<p class="faq_a">Finally, we provide services to the community including <a href="https://twitter.com/ml_collective/status/1308476147802320897" target="_blank">draft proofreading</a> before conference deadlines, and <a href="https://twitter.com/ml_collective/status/1321937116020965376" target="_blank">grad school application pre-reviewing</a> and <a href="https://twitter.com/ml_collective/status/1465849265985662983?s=20" target="_blank">group editing</a> year round. Our members are also often open to chat about career paths, research retrospectives, or anything related to ML/AI research; a few of them host <a href="/events//#mloh">office hours</a> that you can book for 1:1 chats. Our <a href="/events/">events</a> page show all up-to-date services we provide to the community.  
+</p>
+
+
+<p class="faq_q">Q: What core research directions does ML Collective pursue?</p>
+<p class="faq_a">A: Our past work has mostly focused on exposing and understanding neural network representations, optimization, and training dynamics, and using this understanding to design better models. That said, research directions are driven by individual ML Collective members, who may choose to take things in very different directions!</p>
+
+
+<p class="faq_q">Q: Who is ML Collective for?</p>
+<p class="faq_a">A: We provide a default home for ML researchers without affiliations, support aspiring researchers from underrepresented and non-traditional backgrounds, and we hope to attract established researchers who care deeply about diversity, fairness and equality within the community, are eager to give back, and open to produce science in an open, collaborative environment.
+We hope researchers join with the belief that scientific advancements do not need to be profit-driven (and in fact, should inherently be nonprofit), success does not rely upon quantifiable achievements (but can be about how much one helps others, and enables the holistic progress of the community), mentorship does not only come with hierarchy or tenure (instead, we all learn from each other’s expertise), and open collaboration is foundational to both the growth of individuals, and the scientific advancement of the field.</p>
+
+
+<p class="faq_q">Q: Is ML Collective an affiliation? If I’m a member of ML Collective, can I or do I have to use it on my publications?</p>
+<p class="faq_a">A: Yes, members may use ML Collective as an affiliation on papers they publish. They do not have to use it on every paper they publish, but they may, as they prefer.</p>
+
+
+<p class="faq_q">Q: Can I join if I already have a full-time job?</p>
+<p class="faq_a">A: Yes! But you’ll need to make sure that any work you choose to share with the group can in fact be shared as per your employer’s policies.
+</p>
+
+
+<p class="faq_q">Q: What can I get out of Indic?</p>
+<p class="faq_a">A: If you are an unaffiliated researcher, Indic can simply be your home — where you find collaborators, project ideas, mentorship and advice, support and assistance. If you are already affiliated, Indic can be a place where you broaden and diversify your collaboration circle, craft your mentorship skill, and give back to the research community.
+<br><br>
+For example, Indic could be for you if:
+</p>
+<ol>
+    <li>You are excited about research but have not yet developed a strong research direction and are looking to join a new project.</li>
+    <li>You have research ideas you’d like to pursue and are looking for collaborators.</li>
+    <li>You are working on your own research project in isolation and could use people to bounce your ideas and results off of.</li>
+    <li>You simply want to learn more about machine learning and prefer to do so within a community.</li>
+    <li>You are interested in exploring how research within a non-hierarchical, non-monetized organization could work and are happy to be part of the experiment.</li>
+    <li>You already have a research affiliation, collaborators, and a clear direction but are looking to give back to society, expand your collaboration circle, or refine your mentorship skills. This can be a place where you help elevate others’ projects by providing your expertise and assist junior researchers in growing by sharing your unique experiences.</li>
+</ol>
+
+<p class="faq_a"></p>
+
+
+
+<p class="faq_q">Q: Does Indic AIDias charge a membership fee or pay researchers?</p>
+<p class="faq_a">A: No to both. Indic does not collect membership or event participation fees. We're applying for grants and working on being able to accept donations to cover operating expenses.</p>
+
+
+
+<p class="faq_q">Q: How do I join and contribute to Indic AIDias?</p>
+<p class="faq_a">A: Since Indic operates with no paid staff and relies solely on volunteers, we are always looking for contributors!
+Our <a href="/dlct/">weekly talk series</a> and <a href="https://discord.gg/nNJ4GBPZm9">Open Collab discord</a> are open to the public. Once joined, you can start contributing there by attending, helping organize and promote our events, nominating topics, suggesting changes, and all in all helping strengthen our community by being active, friendly, and generous in sharing knowledge and introducing new ideas. To join <a href="/community/#lab">the lab</a> is a slightly longer process, depending on how ready and committed you are about working on research with us. We require new members to join with at least one active research project, meaning she would be leading, and responsible for the success of, that project and committed to giving regular updates for it at our research meetings. It can be something you are already working on, or something we work together to find for you. Get in touch with <a>hello at mlcollective dot org</a> with your research background, interests, and other information so we can start brainstorming research ideas!
+</p>
+
+<p class="faq_q">Q: Do you have a Code of Conduct?</p>
+<p class="faq_a">A: Yes! It is <a target="_blank" href="https://docs.google.com/document/d/1Y6r8oHFF7GIvP0VPDy1JaF1g-mNNX3A49SEAA20qDUs/edit">right here</a>.
+</p>
+
+</div>
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    </main>
+</body>
+</html>

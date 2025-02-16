@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indic Aidias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .site-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .main-nav {
+            margin-bottom: 2rem;
+        }
+
+        .main-nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .main-nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .search-bar {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-container {
+            display: flex;
+        }
+
+        .search-input {
+            padding: 0.5rem;
+            width: 300px;
+            background-color: #FFFFFF;
+            border: 1px solid #333;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-button {
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #FFFFFF;
+            border: 1px solid #333;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        .page-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: #333;
+            color: #FFFFFF;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #FFFFFF;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .action-button {
+            background-color: #6366f1;
+            color: #FFFFFF;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+
+        .action-button.secondary {
+            background-color: transparent;
+            border: 1px solid #6366f1;
+        }
+
+        .action-button:hover {
+            opacity: 0.9;
+        }
+
+        .welcome-text {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .welcome-text h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .welcome-text p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- <img src="https://sjc.microlink.io/8bZWdZy_HPOop3yGfklURD8vgDuuJSIjtn2djxOgWL14Rdsfol1MylCU0anjvdj0GoFrI66uPUW3jKVcBZUCvw.jpeg" alt="ML Collective Logo" class="logo"> -->
+        <h1 class="site-title">Indic Aidias</h1>
+        <nav class="main-nav">
+            <ul>
+                <a href="index.html#home">Home</a>
+                <a href="about.html#about">About</a>
+                <a href="projects.html#projects">Projects</a>
+                <a href="events.html#events">Events</a>
+                <a href="services.html#services">Services</a>
+                <a href="donate.html#donate">Donate</a>
+                <a href="wiki.html#wiki">Wiki</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <div class="left">
+            <span>Main</span>
+            <span>Log in</span>
+        </div>
+        <div class="search-container">
+            <input type="search" placeholder="Search from current article..." class="search-input">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="page-header">
+            <div class="page-title">
+                Welcome to Indic Aidias
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <span>⚙️</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button">
+                        <span>📄</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Document 1</a>
+                        <a href="#">Document 2</a>
+                        <a href="#">Document 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <a href="#" class="action-button">View</a>
+                <a href="#" class="action-button secondary">View Source</a>
+                <a href="#" class="action-button secondary">Changes</a>
+                <a href="#" class="action-button secondary">Attachments</a>
+            </div>
+        </div>
+
+        <div class="welcome-text">
+            <h1>Welcome to Indic Aidias</h1>
+            
+            <p>Hi there, welcome to the <strong>Indic Wiki</strong>! It is a collaborative writing space where members collaborate on blog posts, meeting notes, how-to articles, and other guides to resources. If you want to help make this space awesome, write something today!</p>
+        <p>But first, welcome to <strong>Indic</strong>! <em>"What is Indic and how can I use it to benefit my life?"</em> is perhaps the first question you have in mind coming into this space. The first question is easy to answer: we've said repeatedly that <strong>we are a lab for those who want a research home</strong>. A lab offers: companionship, resources, a structure and space for learning, collaboration, and mentorship opportunities. We try to offer the same things. Now, how can one effectively make use of such a research home? That is unfortunately not an easy question to answer. Even in the traditional setting, some could spend a decade in grad school only to find the wrong answer (by some I mean <a href="https://rosanneliu.com">me</a>). Not to mention that Indic is nothing like a traditional lab: we are not affiliated with any institution, we are <em>mostly</em> virtual, and every member has a different background and is at a different stage of life.</p>
+        <p>But that's the beauty, isn't it? And that's exactly the thing we wanted to build. For that reason, though, there is no one-size-fits-all formula to use Indic  for your research growth (but again, I don't believe in any one-size-fits-all formula for any types of growth). What we try to do is creating an environment that provides lots of options, as many functionalities, areas of expertise, and types of resources as possible, in order not to teach, but to support your learning. To quote Bernard Shaw, "If you teach a man anything, he will never learn." That's what we believe too. <strong>Learning is an active process. We learn by doing.</strong> Indic, in the end, is a space for you to do things, to enjoy the freedom of trying, and failing, sometimes, in order to most effectively learn. For that reason, we expect each individual coming in to put in the work of forging their own path to make use of these mountains of available resources, and possibilities. Even better, we expect <em>you</em> to tell <em>us</em> what we should provide in the long run to facilitate your growth. Whether it means checking in with you often, or leaving you alone, we are very happy to do that.</p>
+        <p>So I hope you are convinced that there's not a written manual on how Indic  can help you succeed in research, for the right reasons, but we are confident that we provide enough Lego pieces for you to build your own manual (okay the analogy falls apart here). In other words, we are a resource provider, a connector, a matchmaker, a platform and stage that <em>allows</em> things to be built, but you will have to be the one that <em>make</em> things happen for yourself.</p>
+        <p>With that, let's start exploring the structure of Indic  and what it really offers.</p>
+        <p>Below you will find some <a href="#wiki-toc-some-general-guides">general guidelines</a> on how to best use this space to serve your need. But remember, instead of passively taking in what we say, you'll have to actively think what you should do. </p>
+        <p>After the general guidelines, we group articles and notes under two main themes: <a href="#wiki-toc-join-us-in-research">research</a> and <a href="#wiki-toc-join-us-in-community-building">community building</a>, that is, until one day Indic is known for a third thing.</p>
+        <p>Lastly, if you have done the work of finding your path and converging to a comfortable spot in Indic, share what had worked for you by appending a passage in <a class="wikipath" href="/wiki/what-worked-for-me/">What worked for me in Indic</a>.</p>
+        <p>Happy Wiki-ing!</p><br>
+        <h2 id="wiki-toc-some-general-guides">Some General Guides<a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-some-general-guides/">[edit]</a></h2>
+        <hr style="border: 2px solid gray; width: 100%;">
+        <ul>
+        <br><li><a class="wikipath" href="/wiki/how-to-have-best-human-interactions/">How to best connect with people in Indic</a> <em>We have built many (too many!) platforms to help create potential chances of valuable human interactions that serve your research growth. How to make the best use of them?</em></li>
+        <li><a class="wikipath" href="/wiki/how-to-get-involved/">How to best use Indic resources</a> <em>How to feel like you are truly part of the Indic community.</em></li>
+        <li><a class="wikipath" href="/wiki/how-to-get-advice/">How to get advice</a> <em>Career advice? Research advice? Practical advice? Find out how to get it at Indic</em>.</li>
+        <li><a class="wikipath" href="/wiki/what-mlc-wants-from-you/">How to give back</a> <em>If you come to this space with more of a goal to give than to take, we appreciate you! This page lists some possibilities, but you can always directly reach out to <a href="https://rosanneliu.com/">Rosanne</a> or <a href="https://yosinski.com/">Jason</a> for a chat!</em></li>
+        </ul><br>
+        <h2 id="wiki-toc-join-us-in-research">Join us in Research<a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-join-us-in-research/">[edit]</a></h2>
+        <hr style="border: 2px solid gray; width: 100%;">
+        <ul>
+        <br><li><a class="wikipath" href="/wiki/how-do-research-mlc/">How to do research in Indic</a> <em>Thoughts on how to use the Indic resource to produce and grow in research.</em></li>
+        <li><a class="wikipath" href="/wiki/ask-mlc-compute-assistance/">Apply for compute assistance</a> <em>We can support your project by granting you some compute!</em></li>
+        <li><a class="wikipath" href="/wiki/research-jam/">Participate in Indic Research Jam</a> <em>Research Jam is our most important research event. Participating in research jam shows your commitment to working in research with Indic.</em></li>
+        <li><a class="wikipath" href="/wiki/give-talk-at-dlct/">Give a talk at DLCT</a> <em>Deep Learning: Classics and Trends (DLCT) is our longest-running reading group. If there's a published paper you want to talk about (either as an author or not), consider bringing it to DLCT.</em></li>
+        <li><a class="wikipath" href="/wiki/add-your-paper-projects-page/">Acknowledge Indic and add paper to our website</a> <em>Have a paper that uses Indic affiliation? This is how to you can acknowledge us in your publication, as well ass how to add it to our website!</em></li>
+        <li><a class="wikipath" href="/wiki/how-grow-researcher/">How to grow as a researcher</a> <em>Great resources on the growth of a researcher. Add your favorite talk, post, or even quotes or tweets here!</em></li><br>
+        </ul>
+        <h2 id="wiki-toc-join-us-in-community-building">Join us in Community Building<a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-join-us-in-community-building/">[edit]</a></h2>
+        <hr style="border: 2px solid gray; width: 100%;">
+        <br><p>If you are interested in getting involved in community building for ML research, be sure to check out our <a href="https://discord.gg/nNJ4GBPZm9">Discord</a> server first. Lots of activities are happening there, and we are always looking for Mods and Admins. The town hall meeting, occurring every two months, is a great place to help with planning and steering Indic's development. You can also host an event to practice your organizational skills, establish and expand your network.</p>
+        <ul>
+        <li><a class="wikipath" href="/wiki/mlc-town-hall-meetings/">Indic Town Hall Meetings</a></li>
+        <li><a class="wikipath" href="/wiki/host-mlc-event/">How to host an Indic event</a></li>
+        <li><a class="wikipath" href="/wiki/how-start-mlc-local-chapter/">How to start an Indic Local Chapter</a></li>
+        <li><a class="wikipath" href="/wiki/how-start-or-join-interest-group/">How to start an Interest Group</a></li><br>
+        </ul>
+        <h3 id="wiki-toc-local-chapters">Local Chapters<a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-local-chapters/">[edit]</a></h3>
+        <hr style="border: 2px solid gray; width: 100%;">
+        <ul>
+        <br><li><a class="wikipath" href="/wiki/mlc-nigeria/">Indic Nigeria</a></li><br>
+        </ul>
+        <!-- <h3 id="wiki-toc-interest-groups">Interest Groups<a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-interest-groups/">[edit]</a></h3><br> -->
+        <h3 id="wiki-toc-interest-groups">
+            Interest Groups <a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-interest-groups/">[edit]</a><br>
+        </h3>
+        <hr style="border: 2px solid gray; width: 100%;">
+        
+        <br><p><strong>Interest Groups</strong> has been the best organic creation from our community. They are self-organized teams on Discord that meet regularly to dive deeper on specific topics. Here's a guide on <a class="wikipath" href="/wiki/how-start-or-join-interest-group/">How to start or join an Interest Group</a>; a number of the existing ones are listed below:</p>
+        <ul>
+        <li><a class="wikipath" href="/wiki/ig_cv/">Computer vision</a></li>
+        <li><a href="http://mlip.shor.tn/notion">Production in ML</a></li>
+        <li><a class="wikipath" href="/wiki/ig_nlp/">Natural language processing</a></li>
+        <li><a class="wikipath" href="/wiki/ig_rl/">Reinforcement learning</a></li>
+        <li><a class="wikipath" href="/wiki/ig_phys/">Physics informed ML</a></li>
+        <li><a class="wikipath" href="/wiki/ig_graph/">Graph learning</a></li>
+        <li><a class="wikipath" href="/wiki/ig_theory/">ML theory</a></li>
+        <li><a class="wikipath" href="/wiki/ig_ood/">OOD and uncertainty quantification</a></li>
+        <li><a href="https://ml-collective.github.io/robotics/">Robotics</a></li>
+        </ul><br>
+        <h2 id="wiki-toc-misc">Misc<a class="article-edit-title-link" href="/wiki/_plugin/editsection/header/wiki-toc-misc/">[edit]</a></h2>
+        <hr style="border: 2px solid gray; width: 100%;">
+    
+        
+        <ul>
+        <br><li>Indic's <a class="wikipath" href="/wiki/code-of-conduct/">Code of Conduct</a></li>
+        <li><a class="wikipath" href="/wiki/how-to-use-wiki/">How to use the wiki</a></li>
+        <li><a class="wikipath" href="/wiki/how-to-use-mlc-github/">How to use the Indic GitHub</a></li>
+        <li><a class="wikipath" href="/wiki/what-worked-for-me/">What worked for me in Indic</a></li>
+        <li><a class="wikipath" href="/wiki/open-projects/">Open Projects</a>: our projects that are inviting collaborators to join.</li>
+        <li><a class="wikipath" href="/wiki/other-open-initiatives/">Other open initialtives</a>: Other machine learning / AI initiatives open to unaffiliated participants.</li>
+        <li><a class="wikipath" href="/wiki/sandbox/">Sandbox</a></li>
+        <li><a href="https://mlcollective.org/logo/">Indic logo in different formats</a> for use in presentations, etc.</li>
+        </ul>
+        </div>
+    </main>
+</body>
+</html>

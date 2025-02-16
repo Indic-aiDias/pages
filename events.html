@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indic Aidias</title>
+    <style>
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Variables */
+        :root {
+            /* --primary-color: #8a2be2; */
+            --text-color: #ffffff;
+            --bg-color: #000000;
+            --accent-color: #b19cd9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .logo-symbol {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: rotate 10s linear infinite;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin: 2rem 0;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 4rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        h1, h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Get Involved Section */
+        .our-story {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://sjc.microlink.io/hKsp17pcTOo8GciufgrE3A5BCXVZjgTfGc0ZZMregDitGE4svUajJDP7tZyvl5b633wqSrFggHfMkx4wxUAp1w.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+
+        .our-story h2 {
+            color: var(--text-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .logo-text {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">Indic Aidias</div>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html#about">About</a>
+            <a href="projects.html#projects">Projects</a>
+            <a href="events.html#events">Events</a>
+            <a href="services.html#services">Services</a>
+            <a href="donate.html#donate">Donate</a>
+            <a href="wiki.html#wiki">Wiki</a>
+        </nav>
+    </header>
+
+    <main>
+      
+    </div>
+
+    <div id="content">
+
+
+        <h2 id="cal">Indic Aidias Events Calendar</h2>
+        
+        <p>
+        All of our ongoing events, including regularly occurring and one-off ones, can be found at the following "Indic Aidias Events Calendar". We recommend subscribing to our calendar via
+        <a href="https://calendar.google.com/calendar/u/0?cid=ZTRwNXM3NzE1ZXJzcXNvZXQ2Y3E0NTA5cTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google Calendar</a> or <a href="https://calendar.google.com/calendar/ical/e4p5s7715ersqsoet6cq4509q0%40group.calendar.google.com/public/basic.ics">iCal</a>. If you would like to be added to private invites of all recurring events, opt in via <a href="https://forms.gle/tiQvBYTbxXFCobrE7">this form</a>.
+        </p>
+        
+        
+        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=e4p5s7715ersqsoet6cq4509q0%40group.calendar.google.com&amp;color=%232F6309" style="border-width:0" width="700" height="600"></iframe>
+        
+        
+        
+        <h2>Deep Learning: Classics and Trends</h2>
+        
+        <p>
+        <a href="/dlct/">Deep Learning: Classics and Trends (DLCT)</a> is the longest running Indic event. It started in 2018 as a paper reading group and has almost never missed a week since. The vibe is interactive, causal, free-flow and unfettered. <b><a href="https://groups.google.com/g/deep-learning-classics-trends">Subscribe with your email</a></b> to get notified weekly. 
+        </p>
+        
+        
+        
+        <h2 id="jam">Research Jams</h2>
+        <p>
+        The Research Jam is a research lab meeting open to all. Anyone is welcome to share small updates on what they're working on, or present an idea as a <a href="/rfp/">Request for Plot (RFP)</a>. All of our jams are recorded and shared on our <a href="https://www.youtube.com/playlist?list=PLfeYlJzwvDN2rBulI6eiOifGH70PjRs6V">YouTube Channel</a>. Curious to know more? Read "<a target="_blank" href="https://mlcollective.org/wiki/research-jam/"><i>What to expect when you are expecting a research jam</i></a>."
+        </p>
+        
+        <h3>Upcoming jam</h3>
+        <ol>
+        
+        
+        
+        <li><b><a target="_blank" href="/events/research-jam-26/">Open Collab Research Jam #26</a></b> on <abbr title="Wed, Mar 19, 2025 at 16:00 UTC">Wed, Mar 19, 2025 at 9:00 am PDT</abbr> 
+        </li>
+        
+        
+        
+        </ol>
+        
+        <h3>Past jams</h3>
+        <ol>
+        
+        
+        <li>
+        
+        <b><a target="_blank" href="/events/research-jam-25/">Open Collab Research Jam #25</a></b> on <abbr title="Wed, Jan 22, 2025 at 16:00 UTC">Wed, Jan 22, 2025 at 8:00 am PST</abbr> 
+        
+        </li>
+        
+        <li>
+        
+        <b><a target="_blank" href="/events/research-jam-24/">Open Collab Research Jam #24</a></b> on <abbr title="Wed, Nov 13, 2024 at 16:00 UTC">Wed, Nov 13, 2024 at 8:00 am PST</abbr> 
+        
+        </li>
+        
+        <li>
+        
+        <b><a target="_blank" href="/events/research-jam-23/">Open Collab Research Jam #23</a></b> on <abbr title="Wed, Sep 18, 2024 at 15:00 UTC">Wed, Sep 18, 2024 at 8:00 am PDT</abbr> 
+        
+        </li>
+        
+        <li>
+        
+        <a href="/events-all/#jam">Older events »</a>
+        
+        </li>
+        
+        
+        </ol>
+        
+        
+        
+        <h2 id="och"> OpenClubHouse</h2>
+        <p>It's just people sitting around and talking like in ClubHouse but we are doing it at our <a href="https://discord.gg/NdhNFdyzyd">voice channel on Discord</a>. You can also easily type your comments and share links at the accompanying text channel. Any topic from brands of cereal to papers you are reading is welcome!
+        </p>
+        
+        <h3> Upcoming OCH </h3>
+        <ol>
+        
+        <li>No upcoming events :(</li>
+        
+        </ol>
+        
+        <h3> Past OCHs </h3>
+        <ol>
+        
+        
+        <li>
+        
+        
+        <b>Indic OpenClubHouse #23</b> on <abbr title="Sun, Dec 22, 2024 at 17:00 UTC">Sun, Dec 22, 2024 at 9:00 am PST</abbr> 
+        
+        
+        </li>
+        
+        <li>
+        
+        
+        <b><a href="https://twitter.com/ml_collective/status/1827398626890719341">Indic OpenClubHouse #22</a></b> on <abbr title="Sun, Aug 25, 2024 at 17:00 UTC">Sun, Aug 25, 2024 at 10:00 am PDT</abbr> 
+        
+        
+        </li>
+        
+        <li>
+        
+        
+        <b><a href="https://x.com/ml_collective/status/1803846477321777419">Indic OpenClubHouse #21</a></b> on <abbr title="Sun, Jun 23, 2024 at 17:00 UTC">Sun, Jun 23, 2024 at 10:00 am PDT</abbr> 
+        
+        
+        </li>
+        
+        <li>
+        
+        <a href="/events-all/#och">Older events »</a>
+        
+        </li>
+        
+        
+        </ol>
+        
+        
+        
+        <h2 id="th">Town Hall</h2>
+        <p>
+        We host Town Hall meetings every two months to get everyone up to speed on what's going on in the community, and give everyone a chance to participate in building Indic to be the place they want. Curious to know more? Read "<a target="_blank" href="https://mlcollective.org/wiki/mlc-town-hall-meetings/"><i>Why the Indic Town Hall is good place to start</i></a>."
+        </p>
+        
+        <h3>Upcoming town hall</h3>
+        <ol>
+        
+        <li>No upcoming events :(</li>
+        
+        </ol>
+        
+        <h3>Past town halls</h3>
+        <ol>
+        
+        
+        <li>
+        
+        
+        <b>11th Indic Town Hall (<a href="https://docs.google.com/presentation/d/1Y7MwBK9-emdoFrtDHt6aqZy1bYIYTGAjBdYtOpKesF0/edit?usp=sharing">slides</a>, <a href="https://docs.google.com/document/d/1N9DmaHfXYLDVra8EaMYq3Pj4iwC7gim3PTDIx2N8pcA/edit?usp=sharing">notes</a>)</b> on <abbr title="Sun, Jan 26, 2025 at 18:00 UTC">Sun, Jan 26, 2025 at 10:00 am PST</abbr> 
+        
+        
+        </li>
+        
+        <li>
+        
+        
+        <b>10th Indic Town Hall (<a href="https://docs.google.com/presentation/d/1TfXQt3HFqDPs7Vhr9lTI8VjNYIBkuebmkaKxDoYWM30/edit?usp=sharing">slides</a>, <a href="https://docs.google.com/document/d/1g0yMvjgLFca2gri7MHLW1tWpx9E87GM-FeXo-9TEUPI/edit?usp=sharing">notes</a>)</b> on <abbr title="Sun, Nov 10, 2024 at 18:00 UTC">Sun, Nov 10, 2024 at 10:00 am PST</abbr> 
+        
+        
+        </li>
+        
+        <li>
+        
+        
+        <b>9th Indic Town Hall (<a href="https://docs.google.com/presentation/d/1RBuQu1CiwDGkWrMRecpQzxgpCRT5ZBTfLMehyKls-ms/edit?usp=drive_link">slides</a>, <a href="https://docs.google.com/document/d/13iJ8K7aOv_aBSFbw0LLoNiS9kGRsaqB7YdFfjpArycQ/edit?usp=sharing">notes</a>)</b> on <abbr title="Sun, Jul 21, 2024 at 17:00 UTC">Sun, Jul 21, 2024 at 10:00 am PDT</abbr> 
+        
+        
+        </li>
+        
+        <li>
+        
+        <a href="/events-all/#th">Older events »</a>
+        
+        </li>
+        
+        
+        </ol>
+        
+        
+        
+        <h2 id="social">Conference Socials</h2>
+        
+        <p>
+        We host Open Collaboration Socials at major ML conferences. During our <a href="/neurips-2020-open-collab-social/">inaugural event</a> at NeurIPS 2020, we held a panel discussion on the importance of collaboration, an icebreaker session to randomly match people to meet and greet, and a gather.town hangout with focused topics led by pioneers of the field. We are always looking for co-organizers for our conference social.
+        </p>
+        
+        <!-- <h3>Upcoming social</h3>
+        <ol>
+        
+        <li>No upcoming events :(</li>
+        
+        </ol>
+        
+        <h3>Past socials</h3>
+        <ol> -->
+        
+            <h3 style="margin-bottom: 10px;">Upcoming Social</h3>
+            <ol style="margin-bottom: 20px;">
+                <li>No upcoming events :(</li>
+            </ol>
+            
+            <h3 style="margin-top: 20px;">Past Socials</h3>
+            <ol>
+                <!-- Past events go here -->
+            </ol>
+            
+        
+        
+        <li><b><a target="_blank" href="/events/neurips-2024-lunch/">NeurIPS 2024 Indic Open Picnic Lunch</a></b> on <abbr title="Thu, Dec 12, 2024 at 21:15 UTC">Thu, Dec 12, 2024 at 1:15 pm PST</abbr> 
+        </li>
+        
+        
+        
+        <li><b><a target="_blank" href="/events/iclr-2024-social/">ICLR 2024 Social on Open Collaboration in ML Research</a></b> on <abbr title="Wed, May 08, 2024 at 10:45 UTC">Wed, May 08, 2024 at 3:45 am PDT</abbr> 
+        </li>
+        
+        
+        
+        <li><b><a target="_blank" href="/events/neurips-2022-lunch/">NeurIPS 2022 Indic Lunch Picnic</a></b> on <abbr title="Thu, Dec 01, 2022 at 19:30 UTC">Thu, Dec 01, 2022 at 11:30 am PST</abbr> 
+        </li>
+        
+        
+        
+        <li><b><a target="_blank" href="/events/icml-2021-open-collab-social/">ICML 2021 Social on Open Collaboration in ML Research</a></b> on <abbr title="Thu, Jul 22, 2021 at 15:00 UTC">Thu, Jul 22, 2021 at 8:00 am PDT</abbr> 
+        </li>
+        
+        
+        
+        </ol>
+        
+        
+        
+        </div>
+        
+    
+    
+    
+    
+    </div>
+    
+    
+    </main>
+</body>
+</html>
